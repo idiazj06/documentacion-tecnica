@@ -1,0 +1,315 @@
+/* Fuentes */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Otomanopee+One&family=Roboto:wght@300&display=swap');
+
+/* FontFamily y paleta de colores */
+:root{
+    --FuenteTitulo: 'Otomanopee One', sans-serif;
+    --FuenteCuerpo: 'Roboto', sans-serif;
+    --FuenteNav: 'Lato', sans-serif;
+    --Color1 : #000000;
+    --Color2 : #14213d;
+    --Color3 : #fca311;
+    --Color4 : #e5e5e5;
+    --Color4-5 : #e5e5e527;
+    --Color5 : #ffffff;
+}
+
+
+/* ESTILOS GLOBALES */
+
+* {
+    margin: 0;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: var(--FuenteCuerpo);
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    color: black;
+    background: var(--Color4);
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 20px;
+}
+
+.contenedor {
+    position: relative;
+    margin: auto;
+    width: 100vw;
+    height: auto;
+}
+
+.fila {
+    position: relative;
+    margin: auto;
+    width: 100vw;
+    height: auto;
+    clear: both;
+    display: table;
+}
+
+/* ESTILOS INDIVIDUALES */
+
+/*  Encabezado y NAV */
+
+#navbar {
+    position: fixed;
+    height: 100vh;
+    min-width: 25%;
+    border-right: solid gray;
+}
+
+#navbar #cabecera {
+    text-align: center;
+}
+
+#cabecera h1 {
+    padding: 20px;
+    border-bottom: solid gray;
+    font-size: 24px;
+    font-family: var(--FuenteTitulo);
+}
+
+#cabecera ul {
+    padding: 10px;
+}
+
+#links li {
+    padding: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-bottom: solid rgba(128, 128, 128, 0.5);
+    font-size: 19px;
+    font-family: var(--FuenteNav);
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+/* Informacion de la documentacion tecnica */
+
+.main-section {
+    text-align: justify;
+}
+
+.main-section #header-main {
+    font-size: 30px;
+    padding: 20px auto 5px auto;
+    border-bottom: solid lightgrey;
+    background: var(--Color4-5);
+}
+
+.main-section #info-doc {
+    padding: 10px;
+    margin: 10px auto 5px auto;
+}
+
+.en-que-consiste{
+    font-size: 19px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background: var(--Color5);
+    padding: 10px;
+    margin: 3% auto 3% 25%;
+    border-radius: 5px;
+    max-width: 50%;
+}
+
+#selectores li {
+    padding: 10px;
+    margin: 10px auto 5px auto;
+}
+
+.main-section img {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 10px;
+    margin: 3% auto 3% 25%;
+    border-radius: 5px;
+    max-width: 50%;
+}
+
+/* PANTALLA DE ESCRITORIO GRANDE - LARGE (lg) */
+
+@media(min-width:1200px) {
+    .col-lg-12 {
+        width: 100vw;
+    }
+    .col-lg-11 {
+        width: 91.66666667vw;
+    }
+    .col-lg-10 {
+        width: 83.33333333vw;
+    }
+    .col-lg-9 {
+        width: 75vw;
+    }
+    .col-lg-8 {
+        width: 66.66666667vw;
+    }
+    .col-lg-7 {
+        width: 58.33333333vw;
+    }
+    .col-lg-6 {
+        width: 50vw;
+    }
+    .col-lg-5 {
+        width: 41.66666667vw;
+    }
+    .col-lg-4 {
+        width: 33.33333333vw;
+    }
+    .col-lg-3 {
+        width: 25vw;
+    }
+    .col-lg-2 {
+        width: 16.66666667vw;
+    }
+    .col-lg-1 {
+        width: 8.33333333vw;
+    }
+}
+
+/* PANTALLA DE ESCRITORIO MEDIANA - MEDIUM (md) */
+
+@media(max-width:1199px) and (min-width:992px) {
+    .col-md-12 {
+        width: 100vw;
+    }
+    .col-md-11 {
+        width: 91.66666667vw;
+    }
+    .col-md-10 {
+        width: 83.33333333vw;
+    }
+    .col-md-9 {
+        width: 75vw;
+    }
+    .col-md-8 {
+        width: 66.66666667vw;
+    }
+    .col-md-7 {
+        width: 58.33333333vw;
+    }
+    .col-md-6 {
+        width: 50vw;
+    }
+    .col-md-5 {
+        width: 41.66666667vw;
+    }
+    .col-md-4 {
+        width: 33.33333333vw;
+    }
+    .col-md-3 {
+        width: 25vw;
+    }
+    .col-md-2 {
+        width: 16.66666667vw;
+    }
+    .col-md-1 {
+        width: 8.33333333vw;
+    }
+}
+
+/* PANTALLA DE TABLET - SMALL (sm) */
+
+@media(max-width:991px) and (min-width:768px) {
+    .col-sm-12 {
+        width: 100vw;
+    }
+    .col-sm-11 {
+        width: 91.66666667vw;
+    }
+    .col-sm-10 {
+        width: 83.33333333vw;
+    }
+    .col-sm-9 {
+        width: 75vw;
+    }
+    .col-sm-8 {
+        width: 66.66666667vw;
+    }
+    .col-sm-7 {
+        width: 58.33333333vw;
+    }
+    .col-sm-6 {
+        width: 50vw;
+    }
+    .col-sm-5 {
+        width: 41.66666667vw;
+    }
+    .col-sm-4 {
+        width: 33.33333333vw;
+    }
+    .col-sm-3 {
+        width: 25vw;
+    }
+    .col-sm-2 {
+        width: 16.66666667vw;
+    }
+    .col-sm-1 {
+        width: 8.33333333vw;
+    }
+}
+
+/* PANTALLA DE PHONES - EXTRASMALL (xs) */
+
+@media(max-width:767px) {
+    .col-xs-12 {
+        width: 100vw;
+    }
+    .col-xs-11 {
+        width: 91.66666667vw;
+    }
+    .col-xs-10 {
+        width: 83.33333333vw;
+    }
+    .col-xs-9 {
+        width: 75vw;
+    }
+    .col-xs-8 {
+        width: 66.66666667vw;
+    }
+    .col-xs-7 {
+        width: 58.33333333vw;
+    }
+    .col-xs-6 {
+        width: 50vw;
+    }
+    .col-xs-5 {
+        width: 41.66666667vw;
+    }
+    .col-xs-4 {
+        width: 33.33333333vw;
+    }
+    .col-xs-3 {
+        width: 25vw;
+    }
+    .col-xs-2 {
+        width: 16.66666667vw;
+    }
+    .col-xs-1 {
+        width: 8.33333333vw;
+    }
+}

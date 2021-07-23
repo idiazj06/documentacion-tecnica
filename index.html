@@ -1,15 +1,219 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Styles/style.css">
-    <title>CSS-DcoumentacionTecnica</title>
+    <title>CSS-DcoumentacionTecnicaCSS</title>
 </head>
+
 <body>
-    
+
+    <div class="contenedor">
+        <section class="fila" id="arreglo">
+            <!-- SECCION 1 Encabezado y NAV -->
+
+            <aside id="izq" class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <nav id="navbar">
+                    <header id="cabecera">
+
+                        <h1 id="titulo">DOCUMENTACION CSS</h1>
+
+                        <ul id="links">
+                            <li> <a href="#Introduccion" class="nav-link">Introduccion</a> </li>
+                            <li> <a href="#Efecto_Cascada" class="nav-link">Efecto Cascada</a> </li>
+                            <li> <a href="#Selectores" class="nav-link">Selectores</a> </li>
+                            <li> <a href="#Tipos_de_selectores" class="nav-link">Tipos de selectores</a> </li>
+                            <li> <a href="#Modelo_Caja" class="nav-link">Modelo Caja</a> </li>
+                            <li> <a href="#Media_Query" class="nav-link">Media Query</a> </li>
+                            <li> <a href="#Diseño_Responsive" class="nav-link">Diseño Responsive</a> </li>
+                        </ul>
+
+                    </header>
+                </nav>
+            </aside>
+
+
+
+            <!-- SECCION 2 Informacion de la documentacion tecnica -->
+
+
+            <aside id="der" class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                <main class="principal" id="main-doc">
+
+                    <div id="documentacion">
+
+                        <section class="main-section" id="Introduccion">
+
+                            <header id="header-main">Introduccion</header>
+
+                            <p id="info-doc">CSS es utilizado para diseñar y dar estilo a las páginas web, por ejemplo,
+                                alterando la fuente, color, tamaño y espaciado del contenido, dividirlo en múltiples
+                                columnas o
+                                agregar animaciones y otras características decorativas.</p>
+
+                            <p id="info-doc">El estilo se puede dar inline mediante el atributo style o con selectores,
+                                los
+                                cuales se pueden colocar dentro de la etiqueta style o en una hoja CSS referenciada
+                                dentro
+                                del
+                                head.</p>
+
+                        </section>
+                        <section class="main-section" id="Efecto_Cascada">
+                            <header id="header-main">Efecto Cascada</header>
+
+                            <p id="info-doc">En un primer nivel de simplicidad, la cascada en las hojas de estilo
+                                significa
+                                que
+                                el orden de las reglas importa en CSS: cuando dos reglas tienen la misma especificidad,
+                                se
+                                aplica la que aparece en último lugar en el CSS.</p>
+
+                            <p id="info-doc">En el ejemplo siguiente tenemos dos reglas que pueden aplicarse al h1. El
+                                h1
+                                acaba
+                                siendo de color azul porque estas normas tienen un selector idéntico y, por lo tanto,
+                                tienen
+                                la
+                                misma especificidad. Por esta razón, se aplica la última que aparece.</p>
+
+                            <code id="ejemplo-code">h1 { 
+                            color: red; 
+                        }
+                        h1 { 
+                            color: blue; 
+                        }
+                    </code>
+
+                        </section>
+                        <section class="main-section" id="Selectores">
+                            <header id="header-main">Selectores</header>
+
+                            <p id="info-doc">En CSS los selectores se utilizan para delimitar los elementos HTML de
+                                nuestra
+                                página web a los que queremos aplicar estilo. Hay una amplia variedad de selectores CSS,
+                                lo
+                                que
+                                permite una gran precisión a la hora de seleccionar elementos a los que aplicar estilo.
+                            </p>
+
+
+                        </section>
+                        <section class="main-section" id="Tipos_de_selectores">
+                            <header id="header-main">Tipos de selectores</header>
+
+                            <ul id="selectores">
+                                <li id="tip-selec">
+
+                                    <p>Selector Universal</p>
+                                    <p>Sintaxsis : *{ atributo:valor }</p>
+                                    <code class="ejemplo-code" id="ejemplo-tip-selec">* { color: grey; }</code>
+                                    <p>El estilo se aplicará a todos los elementos de la página</p>
+
+                                </li>
+                                <li id="tip-selec">
+
+                                    <p>Selector etiqueta</p>
+                                    <p>Sintaxis: etiqueta { atributo:valor }</p>
+                                    <code class="ejemplo-code" id="ejemplo-tip-selec"> .blend{color: red;}</code>
+                                    <p> El estilo se aplicará a cualquier elemento que tenga la clase .blend</p>
+
+                                </li>
+                                <li id="tip-selec">
+
+                                    <p>Selector identificador</p>
+                                    <p>El selector identificador utiliza el atributo id para seleccionar un elemento.
+                                        Solo
+                                        puede
+                                        haber un elemento con un id dado en un documento.</p>
+                                    <p>Sintaxis: #id { atributo:valor }</p>
+                                    <code class="ejemplo-code" id="ejemplo-tip-selec">#cent {color: blue;}</code>
+                                    <p>El estilo se aplicará al elemento que tenga el id #cent</p>
+
+                                </li>
+                                <li id="tip-selec"></li>
+                            </ul>
+
+                        </section>
+                        <section class="main-section" id="Modelo_Caja">
+
+                            <header id="header-main">Modelo Caja</header>
+
+                            <p id="info-doc">El modelo de caja CSS es un módulo CSS que define cajas rectangulares,
+                                incluyendo
+                                sus rellenos y márgenes, que son generadas para los elementos y que se disponen de
+                                acuerdo
+                                al
+                                modelo de formato visual.</p>
+
+                            <img src="https://ricardorubiosimon.files.wordpress.com/2014/11/cajas.jpg"
+                                alt="Modelo Caja">
+
+                        </section>
+                        <section class="main-section" id="Media_Query">
+
+                            <header id="header-main">Media query</header>
+
+                            <p id="info-doc">Las media queries (en español "consultas de medios") son útiles cuando
+                                deseas
+                                modificar tu página web o aplicación en función del tipo de dispositivo (como una
+                                impresora
+                                o
+                                una pantalla) o de características y parámetros específicos (como la resolución de la
+                                pantalla o
+                                el ancho del viewport del navegador).</p>
+
+                            <p id="info-doc">La siguiente media query especifica una hoja de estilo para ser utilizada
+                                cuando la
+                                ventana tiene un ancho entre 450 y 800 píxeles:</p>
+
+                            <code class="ejemplo-code" id="ejemplo-mq">@media screen and (min-width: 450px) and (max-width: 800px) { 
+                        ... 
+                  }</code>
+
+                        </section>
+                        <section class="main-section" id="Diseño_Responsive">
+
+                            <header id="header-main">Diseño responsive</header>
+
+                            <p id="info-doc">El diseño web responsive o adaptativo es una técnica de diseño web que
+                                busca la
+                                correcta visualización de una misma página en distintos dispositivos. Desde ordenadores
+                                de
+                                escritorio a tablets y móviles.</p>
+
+                            <h1 class="en-que-consiste">¿En qué consiste el diseño responsive?</h1>
+
+                            <p id="info-doc funcion">Se trata de redimensionar y colocar los elementos de la web de
+                                forma
+                                que se
+                                adapten al ancho de cada dispositivo permitiendo una correcta visualización y una mejor
+                                experiencia de usuario. Se caracteriza porque los layouts (contenidos) e imágenes son
+                                fluidos y
+                                se usa código media-queries de CSS3.
+
+                                El diseño responsive permite reducir el tiempo de desarrollo, evita los contenidos
+                                duplicados, y
+                                aumenta la viralidad de los contenidos ya que permite compartirlos de una forma mucho
+                                más
+                                rápida
+                                y natural.</p>
+
+
+                        </section>
+
+
+                    </div>
+
+                </main>
+            </aside>
+        </section>
+    </div>
 
     <script src="./Scripts/script.js"></script>
 </body>
+
 </html>
