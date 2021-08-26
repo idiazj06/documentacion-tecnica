@@ -47,7 +47,7 @@
 
                         <section class="main-section" id="Introduccion">
 
-                            <header id="header-main">Introduccion</header>
+                            <header class="header-main">Introduccion</header>
 
                             <p id="info-doc">CSS es utilizado para diseñar y dar estilo a las páginas web, por ejemplo,
                                 alterando la fuente, color, tamaño y espaciado del contenido, dividirlo en múltiples
@@ -63,7 +63,7 @@
 
                         </section>
                         <section class="main-section" id="Efecto_Cascada">
-                            <header id="header-main">Efecto Cascada</header>
+                            <header class="header-main">Efecto Cascada</header>
 
                             <p id="info-doc">En un primer nivel de simplicidad, la cascada en las hojas de estilo
                                 significa
@@ -80,17 +80,17 @@
                                 la
                                 misma especificidad. Por esta razón, se aplica la última que aparece.</p>
 
-                            <code id="ejemplo-code">h1 { 
-                            color: red; 
-                        }
-                        h1 { 
-                            color: blue; 
-                        }
-                    </code>
+                            <code id="ejemplo-code">h1 {
+                                color: red;
+                                }
+                                h1 {
+                                color: blue;
+                                }
+                            </code>
 
                         </section>
                         <section class="main-section" id="Selectores">
-                            <header id="header-main">Selectores</header>
+                            <header class="header-main">Selectores</header>
 
                             <p id="info-doc">En CSS los selectores se utilizan para delimitar los elementos HTML de
                                 nuestra
@@ -103,26 +103,26 @@
 
                         </section>
                         <section class="main-section" id="Tipos_de_selectores">
-                            <header id="header-main">Tipos de selectores</header>
+                            <header class="header-main">Tipos de selectores</header>
 
                             <ul id="selectores">
-                                <li id="tip-selec">
+                                <li class="tip-selec">
 
                                     <p>Selector Universal</p>
                                     <p>Sintaxsis : *{ atributo:valor }</p>
-                                    <code class="ejemplo-code" id="ejemplo-tip-selec">* { color: grey; }</code>
+                                    <code class="ejemplo-code" class="ejemplo-tip-selec">* { color: grey; }</code>
                                     <p>El estilo se aplicará a todos los elementos de la página</p>
 
                                 </li>
-                                <li id="tip-selec">
+                                <li class="tip-selec">
 
                                     <p>Selector etiqueta</p>
                                     <p>Sintaxis: etiqueta { atributo:valor }</p>
-                                    <code class="ejemplo-code" id="ejemplo-tip-selec"> .blend{color: red;}</code>
+                                    <code class="ejemplo-code" class="ejemplo-tip-selec"> .blend{color: red;}</code>
                                     <p> El estilo se aplicará a cualquier elemento que tenga la clase .blend</p>
 
                                 </li>
-                                <li id="tip-selec">
+                                <li class="tip-selec">
 
                                     <p>Selector identificador</p>
                                     <p>El selector identificador utiliza el atributo id para seleccionar un elemento.
@@ -130,17 +130,46 @@
                                         puede
                                         haber un elemento con un id dado en un documento.</p>
                                     <p>Sintaxis: #id { atributo:valor }</p>
-                                    <code class="ejemplo-code" id="ejemplo-tip-selec">#cent {color: blue;}</code>
+                                    <code class="ejemplo-code" class="ejemplo-tip-selec">#cent {color: blue;}</code>
                                     <p>El estilo se aplicará al elemento que tenga el id #cent</p>
 
                                 </li>
-                                <li id="tip-selec"></li>
+                                <li class="tip-selec">
+
+                                    <p>Selector clase</p>
+                                    <p>Los selectores de clase buscan un elemento basado en el contenido de su atributo
+                                        class. El atributo class está definido como una lista de elementos separados por
+                                        espacio, y uno de esos elementos debe coincidir exactamente con el nombre de
+                                        clase dado en el selector.</p>
+                                    <p>Sintaxis: .clase { atributo:valor }</p>
+                                    <code class="ejemplo-code" class="ejemplo-tip-selec">.blend{color: red;}</code>
+                                    <p>El estilo se aplica a todos los párrafos que se encuentren dentro de una etiqueta
+                                        div</p>
+
+                                </li>
+                                <li class="tip-selec">
+
+                                    <p>Selector descendiente</p>
+                                    <p>El ␣ combinador (que se supone que representan un espacio, o mejor dicho uno o
+                                        más espacios en blanco) combina dos selectores tales que el selector combinado
+                                        incluye sólo los elementos que coinciden con el segundo selector para los que
+                                        hay un elemento ancestro que coincide con el primer selector. Los selectores
+                                        descendientes son similares a selectores hijos , pero que no requieren que la
+                                        relación entre los elementos coincidentes ser estrictamente entre padres e
+                                        hijos.</p>
+                                    <p>Sintaxis: selector1 selector2 selectorN {atributo: valor;} </p>
+                                    <code class="ejemplo-code" class="ejemplo-tip-selec">div p { color: black;}</code>
+                                    <p>El estilo se aplica a todos los párrafos que se encuentren dentro de una etiqueta
+                                        div</p>
+
+                                </li>
+                                <li class="tip-selec"></li>
                             </ul>
 
                         </section>
                         <section class="main-section" id="Modelo_Caja">
 
-                            <header id="header-main">Modelo Caja</header>
+                            <header class="header-main">Modelo Caja</header>
 
                             <p id="info-doc">El modelo de caja CSS es un módulo CSS que define cajas rectangulares,
                                 incluyendo
@@ -155,7 +184,7 @@
                         </section>
                         <section class="main-section" id="Media_Query">
 
-                            <header id="header-main">Media query</header>
+                            <header class="header-main">Media query</header>
 
                             <p id="info-doc">Las media queries (en español "consultas de medios") son útiles cuando
                                 deseas
@@ -170,14 +199,15 @@
                                 cuando la
                                 ventana tiene un ancho entre 450 y 800 píxeles:</p>
 
-                            <code class="ejemplo-code" id="ejemplo-mq">@media screen and (min-width: 450px) and (max-width: 800px) { 
-                        ... 
-                  }</code>
+                            <code class="ejemplo-code" id="ejemplo-mq">@media screen and (min-width: 450px) and
+                                (max-width: 800px) {
+                                ...
+                                }</code>
 
                         </section>
                         <section class="main-section" id="Diseño_Responsive">
 
-                            <header id="header-main">Diseño responsive</header>
+                            <header class="header-main">Diseño responsive</header>
 
                             <p id="info-doc">El diseño web responsive o adaptativo es una técnica de diseño web que
                                 busca la
